@@ -53,5 +53,26 @@ pub fn my_datatypes() {
  let heart_eyed_cat = '😻';
  println!("{c}-{z}-{heart_eyed_cat}");
 
+ //compund type
+ // tuple
+
+ let tup = (500, 6.4, 1);
+ let(xo, yo, zo) = tup;
+ println!("tuple=({xo},{yo},{zo})");
+
+ let tup2: (i32, f64, u8) = (500, 6.4, 1);
+ println!("{:?}", tup2);
+ let fstval = tup2.0;
+ println!("{fstval}");
+
+ // array
+ let a = [1,2,3,4];
+ let a2: [i32; 5] = [1, 2, 3, 4, 5];
+ let a3 = [1; 5];
+
+ println!("{:?}", a);
+ println!("{:?}", a2);
+ println!("{:?}", a3);
+
  println!("---------------------------------------");
 }
